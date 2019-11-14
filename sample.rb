@@ -7,5 +7,5 @@ module Clockwork
    notifier = Slack::Notifier.new('https://hooks.slack.com/services/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')
    notifier.ping('Hi, there!!!!!')
  end
- every(3.seconds, 'send')
+ every(3.minutes, 'send')
 end
